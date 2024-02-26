@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>برامج التواصل الاجتماعي</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .logo {
+      font-family: 'Arial', sans-serif; /* تحديد نوع الخط */
+      font-size: 36px; /* حجم الخط */
+      font-weight: bold; /* سمك الخط */
+      padding: 10px; /* هامش داخلي للشعار */
+      border: 2px solid #333; /* إضافة حدود */
+      border-radius: 10px; /* تدوير حواف الشعار */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* إضافة ظل للشعار */
+    }
+
+    .dark-mode .social-media a {
+      color: #fff; /* لون الأيقونات في الوضع المظلم */
+    }
+
+    body {
+      text-align: center;
+      color: #333;
+      transition: background-color 0.5s, color 0.5s;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg'); /* إضافة خلفية */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    #dark-mode-toggle {
+      position: fixed;  
+      top: 10px;
+      right: 10px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      transition: transform 0.3s;
+    }
+
+    #dark-mode-toggle:hover {
+      transform: scale(1.1);
+    }
+
+    #dark-mode-toggle i {
+      font-size: 24px;
+    }
+
+    main {
+      margin-top: 50px;
+    }
+
+    #profile-pic {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+      border: 3px solid #007bff;
+    }
+
+    hr {
+      width: 50%;
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 20px auto;
+    }
+
+    .social-media {
+      margin-top: 20px;
+    }
+
+    .social-media a {
+      margin: 0 10px;
+      color: #333;
+      transition: color 0.3s;
+      font-size: 30px;
+    }
+
+    .social-media a:hover {
+      color: #007bff;
+      transform: scale(1.2);
+    }
+    .image-box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.image-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.square-image {
+  width: 150px; /* يمكن تغيير القيمة وفقًا للحجم المطلوب */
+  height: 150px;
+  object-fit: cover; /* تغيير حجم الصورة دون تشويه النسبة */
+  border-radius: 10px;
+}
+/* تحديد التحويلات للصورة */
+#profile-pic {
+  transition: width 0.5s, height 0.5s;
+}
+
+/* تحديد التحويلات للأيقونات */
+.social-media a {
+  transition: transform 0.3s;
+}
+.social-media a i {
+  display: inline-block;
+  transition: transform 0.3s; /* تحديد التحويلات للأيقونات */
+  perspective: 1000px; /* تحديد النظرية للعناصر ثلاثية الأبعاد */
+}
+
+.social-media a:hover i {
+  transform: rotateY(180deg); /* تدوير الأيقونة حول محور Y بزاوية 180 درجة عندما تتم مراوغتها */
+}
+
+    /* تحديد النظرية للعناصر ثلاثية الأبعاد */
+body {
+  perspective: 1000px;
+}
+
+/* تعيين خطوط العرض بشكل أقواس */
+hr {
+  border: none;
+  height: 1px; /* سمك الخط */
+  background-color: #ccc; /* لون الخط */
+  margin: 20px auto;
+  width: 50%; /* عرض الخط */
+  transform: rotateX(60deg); /* تدوير الخط حول محور X بزاوية 60 درجة */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"> سلطان الداحم</div>
+
+  </header>
+
+
+  <!-- زر تبديل الوضع -->
+  <button id="dark-mode-toggle"><i class="fas fa-sun"></i></button>
+
+  <main>
+    <!-- الصورة الشخصية -->
+    <img id="profile-pic" src="1122.png" alt="صورتك الشخصية" class="square-image">
+
+    <!-- الخط تحت الصورة -->
+    <hr>
+
+    <!-- أزرار التواصل الاجتماعي -->
+    <div class="social-media">
+      <a href="https://x.com/s6n_77?s=21"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.snapchat.com/add/s6n_77"><i class="fab fa-snapchat"></i></a>
+      <a href="https://www.tiktok.com/@s6n_77?_t=8k8OAvfqmjI&_r=1"><i class="fab fa-tiktok"></i></a>
+      <a href="https://t.me/s6n_777"><i class="fab fa-telegram"></i></a>
+      <a href="https://wa.me/"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://youtube.com/@s6n_77?si=cAPyvnkmQ7FOTkO4"><i class="fab fa-youtube"></i></a>
+    </div>
+  </main>
+
+  <!-- السكربت -->
+  <script>
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDarkMode = body.classList.contains('dark-mode');
+      if (isDarkMode) {
+        darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        document.querySelector('.logo').style.backgroundColor = '#333';
+        document.querySelector('.logo').style.color = '#fff'; // تغيير لون النص إلى أبيض في الوضع المظلم
+      } else {
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        document.querySelector('.logo').style.backgroundColor = '#fff';
+        document.querySelector('.logo').style.color = '#333'; // تغيير لون النص إلى أسود في الوضع العادي
+      }
+    });
+  </script>
+  <hr>
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; 2024 عبدالله حمود</p>
+    
+  </footer>
+  
+</body>
+</html>
